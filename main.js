@@ -1,5 +1,4 @@
 
-
 const form = document.querySelector("#form-search");
 const moneda = document.querySelector("#moneda");
 const criptomoneda = document.querySelector("#criptomonedas");
@@ -27,8 +26,6 @@ function submitForm(e){
         return;
     }
     consultarAPI(moneda, criptomoneda);
-    //console.log(moneda);
-    //console.log(criptomoneda);
 }
 
 function consultarAPI(moneda, criptomoneda){
@@ -37,7 +34,6 @@ function consultarAPI(moneda, criptomoneda){
         .then(resultado => resultado.json())
         .then(resultadoJson => {
             mostrarCotizacion(resultadoJson.DISPLAY[criptomoneda][moneda]);
-            //console.log(resultadoJson.DISPLAY[criptomoneda][moneda]);
         })
         .catch(error => console.log(error));
 }
@@ -76,7 +72,6 @@ function consultarCriptos(){
         .then(respuesta => respuesta.json())
         .then(respuestaJson => {
             selectCriptos(respuestaJson.Data);
-            //console.log(respuestaJson.Data);
         })
         .catch(error => console.log(error));
 }

@@ -176,7 +176,7 @@ input {
     gap: 15px;
 }
 
-p{
+/*p{
   width:32.5rem ;
   height: 3.125rem;
   background-color: rgb(209, 156, 156);
@@ -184,7 +184,7 @@ p{
   font-size: xx-large;
   border-radius: 15%;
   border: 5px black;
-}
+}*/
 
 .main-price{
     color:rgb(247, 240, 240);
