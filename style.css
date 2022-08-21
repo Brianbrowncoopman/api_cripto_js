@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: burlywood;
+    padding: 6rem;
+   
+    justify-items: center;
+    align-items: center;
+}
+
+.main-section {
+    width: 75%;
+    height: 25.75rem;
+    padding: 2rem;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-section h2 {
+    text-transform: uppercase;
+    color: #736c6c;
+    font-size: 300%;
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    height: 10rem;
+    background-color: blue;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+#moneda {
+    width: 350px;
+    height: 30px;
+    background-color: rgb(252, 250, 251);
+    border-radius: 5px;
+    font-size: 150%;
+    text-align: center;
+}
+
+#criptomonedas {
+    width: 350px;
+    height: 30px;
+    background-color: rgb(252, 253, 252);
+    border-radius: 5px;
+    font-size: 150%;
+    text-align: center;
+}
+input {
+    width: 350px;
+    height: 30px;
+    background-color: rgb(112, 112, 112);
+    border-radius: 5px;
+    font-size: 150%;
+}

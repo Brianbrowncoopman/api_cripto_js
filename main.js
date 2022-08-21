@@ -1,56 +1,3 @@
-/*const form = document.querySelector("#form-search");
-const moneda = document.querySelector("#moneda");
-const criptomoneda = document.querySelector("#criptomonedas");
-const formContainer = document.querySelector(".form-side");
-const containerAnswer = document.querySelector(".container-answer");
-
-const objBusqueda = {
-  moneda: '' ,
-  criptomoneda: '',
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  consultarCriptos();
-
-  form.addEventListener('submit', submitForm); 
-  moneda.addEventListener('change', getValue);
-  criptomoneda.addEventListener('change', getValue);
-})
-
-function submitForm(e){
-  e.preventDeFault();
-  const {moneda, criptomoneda} = objBusqueda;
-
-  console.log(criptomoneda)
-
-}
-
-function getValue(e){
-  objBusqueda[e.target.name] = e.target.value;
-
-}
-
-function consultarCriptos() {
-  const url ="https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD";
-
-  fetch(url)
-    .then(respuesta => respuesta.json())
-    .then(respuestaJson => {
-        selectCriptos(respuestaJson.Data);
-      //console.log(respuestaJson.Data);
-    })
-    .catch(error => console.log(error));
-}
-
-function selectCriptos(criptos){
-  criptos.forEach(cripto => {
-    const {FullName, Name} = cripto.CoinInfo;    
-    const option = document.createElement("option");
-    option.value = Name;
-    option.textContent = FullName;
-    criptomoneda.appendChild(option);   
-  });
-}*/
 
 const form = document.querySelector("#form-search");
 const moneda = document.querySelector("#moneda");
@@ -101,7 +48,9 @@ function mostrarCotizacion(data){
     answer.classList.add('display-info');
     answer.innerHTML = `
         <p class="main-price">Precio: <span>${PRICE}</span></p>
+        <br>
         <p>Precio más alto del día:: <span>${HIGHDAY}</span></p>
+        <br>
         <p>Precio más bajo del día: <span>${LOWDAY}</span></p>
         <p>Variación últimas 24 horas: <span>${CHANGEPCT24HOUR}%</span></p>
         <p>Última Actualización: <span>${LASTUPDATE}</span></p>
