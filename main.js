@@ -23,7 +23,7 @@ function submitForm(e){
     e.preventDefault();
     const {moneda, criptomoneda} = objBusqueda;
     if (moneda === '' || criptomoneda === '') {
-        showError('Seleccione ambas monedas...');
+        showError('Seleccione ambas opciones...');
         return;
     }
     consultarAPI(moneda, criptomoneda);
@@ -62,7 +62,7 @@ function showError(mensage){
     error.classList.add("error");
     error.textContent = mensage;
     formContainer.appendChild(error);
-    setTimeout(() => error.remove(), 3000);
+    setTimeout(() => error.remove(), 20000);
 }
 
 function getValue(e){
