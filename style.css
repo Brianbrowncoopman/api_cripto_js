@@ -19,8 +19,8 @@ body {
 
 /*spinner*/
 
-.centrado{
-  height: 300px;
+.centrado {
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,15 +176,11 @@ input {
     gap: 15px;
 }
 
-/*p{
-  width:32.5rem ;
-  height: 3.125rem;
-  background-color: rgb(209, 156, 156);
-  color:red;
-  font-size: xx-large;
-  border-radius: 15%;
-  border: 5px black;
-}*/
+p{ 
+    font-size: 2rem;
+
+}
+
 
 .main-price{
     color:rgb(247, 240, 240);
@@ -221,5 +217,7 @@ input {
     color: rgb(250, 245, 245);
     font-size: 150%;
 }
+
+
 
 

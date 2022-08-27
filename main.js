@@ -58,7 +58,8 @@ function showError(mensage){
     error.classList.add("error");
     error.textContent = mensage;
     formContainer.appendChild(error);
-    setTimeout(() => error.remove(), 20000);
+  
+    setTimeout(() => error.remove(), 2000);
 }
 
 function getValue(e){
